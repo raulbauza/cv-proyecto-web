@@ -173,17 +173,17 @@ font-weight: bold;
 .grupo-edu h4{
     padding-left: 80px;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
 }
 .grupo-edu span{
     position: absolute;
     top: 10px;
     right: 0;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
 }
 .grupo-edu p{
-    padding-left: 80px;
+    padding-left: 100px;
 }
 button {
     font-size: 25px;
@@ -230,8 +230,8 @@ button :hover {
 .botonModoOscuro::after{
     display:block;
     background: #fffbf5;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.9rem;
+    height: 2.9rem;
     position: absolute;
     top:0;
     left:0;
