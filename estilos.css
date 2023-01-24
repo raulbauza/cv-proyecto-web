@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.principal {
+    width: 80%;
+    margin: 20px auto;
+}
+.principal .header {
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ position: absolute;
+ top: 50px;
+ left: 65px;
+ border: 5px solid white;
+ box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+ cursor: pointer;
+ transition: .5s;
+ user-select: none;
+ filter: grayscale(100%);
+}
+.header img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.25);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+.header-texto {
+    color: black;
+    width: 60% ;
+    margin-left: auto;
+}
+.header-texto h1 {
+    font-size: 60px;
+    font-weight: normal;
+}
+.header-texto p {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.zona-izq {
+    width: 30%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+}
+.zona-izq .contacto {
+    margin-top: 130px;
+}
+.contacto h4 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.contaco h5 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.contacto p {
+    font-size: 20px;
+}
+.lenguajes {
+    margin-top: 30px;
+}
+.lenguajes h1 {
+    font-size: 30px;
+    font-weight: normal;
+}
+.barras{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+.barras .barra p{
+font-size: 15px;
+font-weight: bold;
+}
+.barra span{
+    display: block;
+    width:100% ;
+    height: 10px;
+    background-color: rgb(190, 190, 190);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.barra span::before{
+    position:absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+
+.zona-der {
+    width: 70%;
+    padding: 50px;
+}
+.zona-der h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.zona-der h1 span{
+    margin-top: 30px;
+    font-size: 50px;
+    color: black;
+    padding: 10px;
+}
+.zona-der p{
+    padding-left: 70px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 22px;
+    color: black;
+    margin-top: 10px;
+} 
+.grupo-trab {
+    margin: 20px 0;
+}
+.trab .grupo-trab{
+    position: relative;
+}
+.grupo-trab h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+.grupo-trab h4{
+    font-size: 18px;
+    padding-left: 70px;
+    font-weight: normal;
+    color: black;
+}
+.grupo-trab span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.educacion{
+    margin-top: 30px;
+}
+.grupo-edu{
+    position: relative;
+}
+.grupo-edu h4{
+    padding-left: 80px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.grupo-edu span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.grupo-edu p{
+    padding-left: 80px;
+}
+button {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 0px;
+    background-color: gray;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+   
+       
+
+}
+
+button :hover {
+    background-color: black;
+}
+
+
+.botonModoOscuro{
+    background: rgba(85, 83, 78, 0.5);
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botonModoOscuro span{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    color:#fff;
+    background: none;
+}
+
+.botonModoOscuro::after{
+    display:block;
+    background: #fffbf5;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    content: "";
+}
+.botonModoOscuro.active{
+    background: #f0ed63;
+  }
+  .botonModoOscuro.active::after{
+    left:unset;
+    right:0;
+  }
+  body {
+    background: #f0ed63;
+    
+  }
+  body.dark{
+    background:  rgba(85, 83, 78, 0.5)
+  }
